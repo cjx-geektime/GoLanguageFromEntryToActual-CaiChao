@@ -25,3 +25,6 @@ go version go1.16.7 linux/amd64
 ```
 ## 安装 IDE
 Atom: https://atom.io + Package: go-plus
+
+# 课件及源码地址
+https://gitee.com/geektime-geekbang/go_learning
