@@ -4,6 +4,7 @@ import "testing"
 
 func TestMapWithFunValue(t *testing.T) {
 	// Map 的 value 可以是一个方法
+	// 这种用法可以用于创建工厂模式，key：工厂方法
 	m := map[int]func(op int) int{}
 
 	m[1] = func(op int) int {
