@@ -2,6 +2,7 @@ package set
 
 import "testing"
 
+// 在 Go 语言中, Set 数据结构通过 Map 实现
 func TestMapForSet(t *testing.T) {
 	mySet := map[int]bool{}
 	mySet[1] = true
