@@ -12,3 +12,11 @@
 •直接以代码路路径开始,不要有 src
 
 引用远程包：go get -u github.com/easierway/concurrent_map
+
+## 依赖管理
+```
+✗ sudo apt install golang-glide
+✗ glide init
+安装依赖
+$ glide install
+```
