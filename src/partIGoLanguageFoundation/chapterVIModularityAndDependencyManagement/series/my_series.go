@@ -3,6 +3,10 @@ package series
 import "fmt"
 
 func init() {
+	fmt.Println("init1")
+}
+
+func init() {
 	fmt.Println("init2")
 }
 
