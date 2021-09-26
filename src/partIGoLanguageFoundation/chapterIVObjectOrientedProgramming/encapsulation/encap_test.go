@@ -44,8 +44,12 @@ func (e Employee) toString2() string {
 
 func TestStructOperations(t *testing.T) {
 	e := Employee{"0", "Bob", 20}
+	e2 := &Employee{"0", "Bob", 20}
 	// %x: 输出地址
 	fmt.Printf("Address is %x\n", unsafe.Pointer(&e.Name))
 	t.Log(e.toString())
 	t.Log(e.toString2())
+	// 使用指针调用方法
+	t.Log(e2.toString())
+	t.Log(e2.toString2())
 }
