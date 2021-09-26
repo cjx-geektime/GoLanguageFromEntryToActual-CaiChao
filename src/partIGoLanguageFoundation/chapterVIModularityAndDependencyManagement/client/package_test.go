@@ -1,7 +1,7 @@
 package client
 
 import (
-	"partIGoLanguageFoundation/chapterVIModularityAndDependencyManagement/series"
+	"series"
 	"testing"
 )
 
