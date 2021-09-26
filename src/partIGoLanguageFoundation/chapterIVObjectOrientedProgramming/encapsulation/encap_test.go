@@ -23,6 +23,7 @@ func TestCreateEmployeeObj(t *testing.T) {
 	t.Log(e1)
 	t.Log(e1.Id)
 	t.Log(e2)
+	// %T: 输出类型
 	t.Logf("e is %T", e)
 	t.Logf("e is %T", &e)
 	t.Logf("e2 is %T", e2)
@@ -43,6 +44,7 @@ func (e Employee) toString2() string {
 
 func TestStructOperations(t *testing.T) {
 	e := Employee{"0", "Bob", 20}
+	// %x: 输出地址
 	fmt.Printf("Address is %x\n", unsafe.Pointer(&e.Name))
 	t.Log(e.toString())
 	t.Log(e.toString2())
