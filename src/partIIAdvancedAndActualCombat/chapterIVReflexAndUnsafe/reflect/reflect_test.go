@@ -35,7 +35,7 @@ func TestCheckType(t *testing.T) {
 //通过反射调用结构体
 type Employee struct {
 	EmployeeID string
-	Name       string `format:"normal"`
+	Name       string `format:"normal"` // struct tag
 	Age        int
 }
 
@@ -45,14 +45,16 @@ func (e *Employee) UpdateAge(newVal int) {
 
 func TestInvokeByName(t *testing.T) {
 	e := &Employee{"1", "Mike", 30}
-	//按名字获取成员
+	// 按名字访问结构的成员
 	t.Logf("Name: value(%[1]v), Type(%[1]T) ", reflect.ValueOf(*e).FieldByName("Name"))
+	// 访问 StructTag
 	if nameField, ok := reflect.TypeOf(*e).FieldByName("Name"); !ok {
 		t.Error("Failed to get 'name' field.")
 	} else {
 		t.Log("Tag:format", nameField.Tag.Get("format"))
 	}
+	// 按名字访问结构的方方法
 	reflect.ValueOf(e).MethodByName("UpdateAge").
-		Call([]reflect.Value{reflect.ValueOf(1)})
+		Call([]reflect.Value{reflect.ValueOf(31)})
 	t.Log("Updated Age: ", e)
 }
