@@ -6,7 +6,9 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/easierway/concurrent_map v1.0.0 // indirect
 	github.com/gopherjs/gopherjs v0.0.0-20210923143318-357ed63a84fb // indirect
+	github.com/josharian/intern v1.0.0 // indirect
 	github.com/jtolds/gls v4.20.0+incompatible // indirect
+	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/smartystreets/assertions v1.2.0 // indirect
 	github.com/smartystreets/goconvey v1.6.4 // indirect
