@@ -39,5 +39,5 @@
 
 http://principlesofchaos.org
 #### 相关开源项⽬
-- https://github.com/Netflix/chaosmonkey
-- https://github.com/easierway/service_decorators/blob/master/README.md
+- https://github.com/Netflix/chaosmonkey ()
+- https://github.com/easierway/service_decorators/blob/master/README.md (用GO开发分布式服务做微服务架构)
